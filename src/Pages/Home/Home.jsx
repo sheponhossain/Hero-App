@@ -1,12 +1,13 @@
 import googleLogo from '../../assets/google.png';
 import appStore from '../../assets/AppStore.png';
 import herologo from '../../assets/hero.png';
-import { NavLink, useLoaderData } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import Cards from '../../Components/Cards/Cards';
+import { useLoaderData } from 'react-router';
 
 const Home = () => {
   const data = useLoaderData();
-  //   console.log(data);
+  console.log(data);
   return (
     <div className="text-center ">
       <h1 className="text-7xl text-center text-[#001931] font-semibold pt-20">
@@ -73,9 +74,14 @@ const Home = () => {
           Explore our most popular and highly rated apps loved by users
           worldwide.
         </p>
-        <div className="grid grid-cols-4">
+        <div className="w-11/12 mx-auto">
           {/* Cards Component */}
-          <Cards></Cards>
+          <Cards data={data}></Cards>
+        </div>
+        <div>
+          <Link to={'/apps'} className="btn btn-primary mt-6 mb-10">
+            See All Apps
+          </Link>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import { RouterProvider } from 'react-router/dom';
 import Root from './Pages/Root/Root';
 import Home from './Pages/Home/Home';
 import Apps from './Pages/Apps/Apps';
+import Installation from './Pages/Installation/Installation';
 
 const router = createBrowserRouter([
   {
@@ -13,18 +14,17 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: '/',
         index: true,
-        element: <Home />,
-        loader: () => {
-          fetch('homeData.json')
-            .then((res) => res.json())
-            .then((data) => console.log(data));
-        },
+        loader: () => fetch('/homeApp.json'),
+        element: <Home></Home>,
       },
       {
         path: 'apps',
         element: <Apps></Apps>,
+      },
+      {
+        path: 'installation',
+        element: <Installation></Installation>,
       },
     ],
   },

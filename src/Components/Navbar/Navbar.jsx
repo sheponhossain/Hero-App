@@ -1,7 +1,7 @@
 import React from 'react';
 import gitlogo from '../../assets/GitLogo.png';
 import Logo from '../../assets/logo.png';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
   return (
@@ -29,15 +29,21 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Apps</a>
-            </li>
-            <li>
-              <a>Installation</a>
-            </li>
+            <NavLink to={'/'}>
+              <li>
+                <a>Home</a>
+              </li>
+            </NavLink>
+            <NavLink to={'/apps'}>
+              <li>
+                <a>Apps</a>
+              </li>
+            </NavLink>
+            <NavLink to={'/installation'}>
+              <li>
+                <a>Installation</a>
+              </li>
+            </NavLink>
           </ul>
         </div>
         <div className="flex items-center">
@@ -46,31 +52,39 @@ const Navbar = () => {
             alt="Hero.io Logo"
             className="w-10 h-10 inline-block mr-2"
           />
-          <a className=" text-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">
-            HERO.IO
-          </a>
+          <Link to={'/'}>
+            <a className=" text-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">
+              HERO.IO
+            </a>
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-medium text-md">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Apps</a>
-          </li>
-          <li>
-            <a>Installation</a>
-          </li>
+          <NavLink to={'/'}>
+            <li>
+              <a>Home</a>
+            </li>
+          </NavLink>
+          <NavLink to={'/apps'}>
+            <li>
+              <a>Apps</a>
+            </li>
+          </NavLink>
+          <NavLink to={'/installation'}>
+            <li>
+              <a>Installation</a>
+            </li>
+          </NavLink>
         </ul>
       </div>
       <div className="navbar-end">
-        <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-4 text-white rounded-lg font-semibold flex items-center gap-2">
-          <img src={gitlogo} alt="GitHub Logo" className="w-5 h-5" />
-          <Link to={'/'}>
+        <Link to={'/'}>
+          <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-4 text-white rounded-lg font-semibold flex items-center gap-2">
+            <img src={gitlogo} alt="GitHub Logo" className="w-5 h-5" />
             <li>Contribute</li>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

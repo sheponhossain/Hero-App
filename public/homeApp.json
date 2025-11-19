@@ -1,6 +1,6 @@
 [
   {
-    "image": "https://images.unsplash.com/photo-1559027615-ce3a9a3df293",
+    "image": "https://i.ibb.co.com/V09JN7C4/chatgpt.webp",
     "title": "ChatGPT",
     "companyName": "OpenAI",
     "id": 1,
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1580894908361-967195033a27",
+    "image": "https://i.ibb.co.com/qMrJ1R2G/gemini.jpg",
     "title": "Google Gemini",
     "companyName": "Google",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "image": "https://i.ibb.co.com/dJxghY2Z/copilot.jpg",
     "title": "Microsoft Copilot",
     "companyName": "Microsoft",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+    "image": "https://i.ibb.co.com/FLhC7rKz/canva.jpg",
     "title": "Canva AI",
     "companyName": "Canva",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1526178613552-2b45c9c48f58",
+    "image": "https://i.ibb.co.com/Wvjwt82k/notion.png",
     "title": "Notion AI",
     "companyName": "Notion",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1581091012184-5c2f7c2f3ced",
+    "image": "https://i.ibb.co.com/5WtQ5JVC/Replika-AI.jpg",
     "title": "Replika AI",
     "companyName": "Luka Inc.",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1581093448798-cabd9e50a354",
+    "image": "https://i.ibb.co.com/6cpz0Kbn/Cap-Cut-AITools.png",
     "title": "CapCut AI Tools",
     "companyName": "ByteDance",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505",
+    "image": "https://i.ibb.co.com/rGzJ9hCJ/InshotAI.png",
     "title": "Inshot AI",
     "companyName": "InShot Inc.",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+    "image": "https://i.ibb.co.com/7H6ySRL/Adobe-Firefly-Mobile.png",
     "title": "Adobe Firefly Mobile",
     "companyName": "Adobe",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1581091012263-4187d27cd313",
+    "image": "https://i.ibb.co.com/r2PZ24kH/Deep-LTranslate.png",
     "title": "DeepL Translate",
     "companyName": "DeepL SE",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+    "image": "https://i.ibb.co.com/4wvWCXCy/ReminiAI.png",
     "title": "Remini AI",
     "companyName": "Bending Spoons",
     "id": 11,
