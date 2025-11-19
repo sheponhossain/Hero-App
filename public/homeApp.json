@@ -1,0 +1,200 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1559027615-ce3a9a3df293",
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "id": 1,
+    "description": "Advanced conversational AI assistant for writing, learning, coding, and productivity.",
+    "size": 52,
+    "reviews": 1893212,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 21000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 91000 },
+      { "name": "4 star", "count": 302000 },
+      { "name": "5 star", "count": 1443212 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1580894908361-967195033a27",
+    "title": "Google Gemini",
+    "companyName": "Google",
+    "id": 2,
+    "description": "Multimodal AI assistant for generating text, images, reasoning, and search enhancement.",
+    "size": 61,
+    "reviews": 1123041,
+    "ratingAvg": 4.7,
+    "downloads": 300000000,
+    "ratings": [
+      { "name": "1 star", "count": 19000 },
+      { "name": "2 star", "count": 24000 },
+      { "name": "3 star", "count": 61000 },
+      { "name": "4 star", "count": 214000 },
+      { "name": "5 star", "count": 804041 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "title": "Microsoft Copilot",
+    "companyName": "Microsoft",
+    "id": 3,
+    "description": "AI assistant for writing, coding, image creation, and Bing-enhanced search.",
+    "size": 67,
+    "reviews": 954231,
+    "ratingAvg": 4.6,
+    "downloads": 220000000,
+    "ratings": [
+      { "name": "1 star", "count": 23000 },
+      { "name": "2 star", "count": 32000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 241000 },
+      { "name": "5 star", "count": 588231 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+    "title": "Canva AI",
+    "companyName": "Canva",
+    "id": 4,
+    "description": "AI-powered design tool for creating posters, logos, reels, banners and thumbnails.",
+    "size": 80,
+    "reviews": 1554200,
+    "ratingAvg": 4.8,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 28000 },
+      { "name": "2 star", "count": 41000 },
+      { "name": "3 star", "count": 76000 },
+      { "name": "4 star", "count": 354000 },
+      { "name": "5 star", "count": 1080200 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1526178613552-2b45c9c48f58",
+    "title": "Notion AI",
+    "companyName": "Notion",
+    "id": 5,
+    "description": "Smart AI workspace for notes, documents, writing, and task management.",
+    "size": 45,
+    "reviews": 532001,
+    "ratingAvg": 4.7,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 11000 },
+      { "name": "3 star", "count": 21000 },
+      { "name": "4 star", "count": 98000 },
+      { "name": "5 star", "count": 393001 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581091012184-5c2f7c2f3ced",
+    "title": "Replika AI",
+    "companyName": "Luka Inc.",
+    "id": 6,
+    "description": "AI companion chatbot for emotional support, conversation, and self-improvement.",
+    "size": 64,
+    "reviews": 671340,
+    "ratingAvg": 4.5,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 14000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 42000 },
+      { "name": "4 star", "count": 133000 },
+      { "name": "5 star", "count": 462340 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581093448798-cabd9e50a354",
+    "title": "CapCut AI Tools",
+    "companyName": "ByteDance",
+    "id": 7,
+    "description": "AI-powered video editing tools including auto-captions, templates, and effects.",
+    "size": 120,
+    "reviews": 2910043,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 45000 },
+      { "name": "2 star", "count": 61000 },
+      { "name": "3 star", "count": 132000 },
+      { "name": "4 star", "count": 540000 },
+      { "name": "5 star", "count": 2129043 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1580910051074-3eb694886505",
+    "title": "Inshot AI",
+    "companyName": "InShot Inc.",
+    "id": 8,
+    "description": "Video editing app with AI auto-cutting, background removal, and smart filters.",
+    "size": 97,
+    "reviews": 1820030,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 22000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 71000 },
+      { "name": "4 star", "count": 288000 },
+      { "name": "5 star", "count": 1436030 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5",
+    "title": "Adobe Firefly Mobile",
+    "companyName": "Adobe",
+    "id": 9,
+    "description": "AI image generator and editor that supports text-to-image, recolor, and enhancements.",
+    "size": 88,
+    "reviews": 430120,
+    "ratingAvg": 4.6,
+    "downloads": 18000000,
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 21000 },
+      { "name": "4 star", "count": 98000 },
+      { "name": "5 star", "count": 295120 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1581091012263-4187d27cd313",
+    "title": "DeepL Translate",
+    "companyName": "DeepL SE",
+    "id": 10,
+    "description": "Highly accurate AI translator with natural language understanding.",
+    "size": 34,
+    "reviews": 302100,
+    "ratingAvg": 4.7,
+    "downloads": 60000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 19000 },
+      { "name": "4 star", "count": 65000 },
+      { "name": "5 star", "count": 205100 }
+    ]
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9",
+    "title": "Remini AI",
+    "companyName": "Bending Spoons",
+    "id": 11,
+    "description": "Top AI photo enhancer for HD face restoration, sharpening, and studio portraits.",
+    "size": 58,
+    "reviews": 1740000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 45000 },
+      { "name": "3 star", "count": 71000 },
+      { "name": "4 star", "count": 302000 },
+      { "name": "5 star", "count": 1293000 }
+    ]
+  }
+]
