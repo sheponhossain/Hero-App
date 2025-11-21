@@ -20,6 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'apps',
+        loader: () => fetch('/AllAppsCard.json'),
         element: <Apps></Apps>,
       },
       {

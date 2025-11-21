@@ -11,7 +11,8 @@ const Home = () => {
   return (
     <div className="text-center ">
       <h1 className="text-7xl text-center text-[#001931] font-semibold pt-20">
-        We Build <br />
+        We Build
+        <br />
         <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">
           Productive
         </span>

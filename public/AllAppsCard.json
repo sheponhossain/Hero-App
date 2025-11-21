@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/vCW8Qm4Y/CapCut.webp",
+    "title": "CapCut",
+    "companyName": "ByteDance",
+    "id": 1,
+    "description": "AI-powered video editor with auto captions, templates, and advanced filters.",
+    "size": 110,
+    "reviews": 5203100,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 45000 },
+      { "name": "2 star", "count": 73000 },
+      { "name": "3 star", "count": 142000 },
+      { "name": "4 star", "count": 740000 },
+      { "name": "5 star", "count": 3943000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/4Zpr6KrX/Adobe-Lightroom.png",
+    "title": "Adobe Lightroom",
+    "companyName": "Adobe",
+    "id": 2,
+    "description": "Professional photo editor with AI-powered enhancement and RAW support.",
+    "size": 95,
+    "reviews": 3201000,
+    "ratingAvg": 4.7,
+    "downloads": 300000000,
+    "ratings": [
+      { "name": "1 star", "count": 35000 },
+      { "name": "2 star", "count": 48000 },
+      { "name": "3 star", "count": 98000 },
+      { "name": "4 star", "count": 520000 },
+      { "name": "5 star", "count": 2487000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/tw5Q0XxJ/PicsArt.jpg",
+    "title": "PicsArt",
+    "companyName": "PicsArt Inc.",
+    "id": 3,
+    "description": "Powerful image editing suite with AI tools, stickers, layouts and effects.",
+    "size": 89,
+    "reviews": 7012000,
+    "ratingAvg": 4.5,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 140000 },
+      { "name": "3 star", "count": 270000 },
+      { "name": "4 star", "count": 840000 },
+      { "name": "5 star", "count": 5672000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/mV06fpwF/Snapseed.png",
+    "title": "Snapseed",
+    "companyName": "Google",
+    "id": 4,
+    "description": "Professional-level photo editing with selective adjust and AI tools.",
+    "size": 42,
+    "reviews": 3150000,
+    "ratingAvg": 4.5,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 25000 },
+      { "name": "2 star", "count": 34000 },
+      { "name": "3 star", "count": 72000 },
+      { "name": "4 star", "count": 480000 },
+      { "name": "5 star", "count": 2533000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TMFQFbTK/InShot.jpg",
+    "title": "InShot",
+    "companyName": "InShot Inc.",
+    "id": 5,
+    "description": "Easy video editor with AI trimming, transitions, and pro filters.",
+    "size": 78,
+    "reviews": 3154300,
+    "ratingAvg": 4.7,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 45000 },
+      { "name": "3 star", "count": 98000 },
+      { "name": "4 star", "count": 540000 },
+      { "name": "5 star", "count": 2386000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/pr1KFCPL/Canva.jpg",
+    "title": "Canva",
+    "companyName": "Canva",
+    "id": 6,
+    "description": "Graphic design and editing with AI-powered templates, tools, and generators.",
+    "size": 95,
+    "reviews": 12200300,
+    "ratingAvg": 4.8,
+    "downloads": 1000000000,
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 91000 },
+      { "name": "3 star", "count": 210000 },
+      { "name": "4 star", "count": 690000 },
+      { "name": "5 star", "count": 11030000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5xFJ3Cbf/Pixellab.png",
+    "title": "Pixellab",
+    "companyName": "Imagix Studio",
+    "id": 7,
+    "description": "Text editing and photo manipulation tool with 3D effects.",
+    "size": 42,
+    "reviews": 912000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 9000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 31000 },
+      { "name": "4 star", "count": 143000 },
+      { "name": "5 star", "count": 714000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Sw55LNZT/Photo-Room.webp",
+    "title": "PhotoRoom",
+    "companyName": "Artizans of Photo",
+    "id": 8,
+    "description": "Background remover app with AI object cutout and design tools.",
+    "size": 55,
+    "reviews": 1200030,
+    "ratingAvg": 4.7,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 11000 },
+      { "name": "3 star", "count": 24000 },
+      { "name": "4 star", "count": 98000 },
+      { "name": "5 star", "count": 1060030 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/ZR3qmYvp/Remini.png",
+    "title": "Remini",
+    "companyName": "Bending Spoons",
+    "id": 9,
+    "description": "AI photo enhancer for face restoration and HD outputs.",
+    "size": 66,
+    "reviews": 1730020,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 41000 },
+      { "name": "3 star", "count": 58000 },
+      { "name": "4 star", "count": 190000 },
+      { "name": "5 star", "count": 1440020 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Kxkt4bPG/VN-Editor.jpg",
+    "title": "VN Editor",
+    "companyName": "VN Lab",
+    "id": 10,
+    "description": "Professional video editor with cinematic transitions and AI scene detection.",
+    "size": 92,
+    "reviews": 2103300,
+    "ratingAvg": 4.6,
+    "downloads": 200000000,
+    "ratings": [
+      { "name": "1 star", "count": 21000 },
+      { "name": "2 star", "count": 33000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 220000 },
+      { "name": "5 star", "count": 1710000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/qM9j0FnW/Photo-Editor-Pro.png",
+    "title": "Photo Editor Pro",
+    "companyName": "Inovidea",
+    "id": 11,
+    "description": "Powerful all-in-one editor with filters, retouch and AI enhancement.",
+    "size": 47,
+    "reviews": 1102000,
+    "ratingAvg": 4.6,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 9000 },
+      { "name": "2 star", "count": 14000 },
+      { "name": "3 star", "count": 28000 },
+      { "name": "4 star", "count": 160000 },
+      { "name": "5 star", "count": 912000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yckyK1T1/Motion-Ninja.png",
+    "title": "Motion Ninja",
+    "companyName": "changpeng",
+    "id": 12,
+    "description": "Advanced video editor with VFX, slow motion and AI motion tracking.",
+    "size": 102,
+    "reviews": 610000,
+    "ratingAvg": 4.5,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 110000 },
+      { "name": "5 star", "count": 465000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5hTzMFK4/Filmora.jpg",
+    "title": "Filmora",
+    "companyName": "Wondershare",
+    "id": 13,
+    "description": "Full-featured AI video editor with cinematic effects and templates.",
+    "size": 120,
+    "reviews": 3802000,
+    "ratingAvg": 4.7,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 21000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 62000 },
+      { "name": "4 star", "count": 330000 },
+      { "name": "5 star", "count": 3330000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/TDNLpdyS/Kinemaster.jpg",
+    "title": "Kinemaster",
+    "companyName": "Kinemaster Corporation",
+    "id": 14,
+    "description": "Multi-layer video editing with chroma key, AI tracking and audio mixing.",
+    "size": 77,
+    "reviews": 6800000,
+    "ratingAvg": 4.5,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 94000 },
+      { "name": "3 star", "count": 210000 },
+      { "name": "4 star", "count": 740000 },
+      { "name": "5 star", "count": 5670000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/S41XzMPt/Meitu.png",
+    "title": "Meitu",
+    "companyName": "Meitu Inc.",
+    "id": 15,
+    "description": "AI beauty editor with filters, skin retouch, makeup, and face enhancement.",
+    "size": 68,
+    "reviews": 1210000,
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 12000 },
+      { "name": "2 star", "count": 16000 },
+      { "name": "3 star", "count": 32000 },
+      { "name": "4 star", "count": 121000 },
+      { "name": "5 star", "count": 952000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/8L9NzBMZ/YouCut.jpg",
+    "title": "YouCut",
+    "companyName": "InShot Inc.",
+    "id": 16,
+    "description": "Easy video cutter and editor with AI compression and no watermark.",
+    "size": 42,
+    "reviews": 1870000,
+    "ratingAvg": 4.8,
+    "downloads": 100000000,
+    "ratings": [
+      { "name": "1 star", "count": 15000 },
+      { "name": "2 star", "count": 21000 },
+      { "name": "3 star", "count": 33000 },
+      { "name": "4 star", "count": 205000 },
+      { "name": "5 star", "count": 1582000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yn8vzbDG/Photo-Director.png",
+    "title": "PhotoDirector",
+    "companyName": "CyberLink",
+    "id": 17,
+    "description": "AI sky replacement, face retouch, and advanced color adjustment.",
+    "size": 85,
+    "reviews": 750000,
+    "ratingAvg": 4.6,
+    "downloads": 30000000,
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 13000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 110000 },
+      { "name": "5 star", "count": 600000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/JjY7Jm37/Prequel.png",
+    "title": "Prequel",
+    "companyName": "Prequel Inc.",
+    "id": 18,
+    "description": "Aesthetic filters and AI cartoon effects for photos and videos.",
+    "size": 64,
+    "reviews": 940000,
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 9000 },
+      { "name": "2 star", "count": 14000 },
+      { "name": "3 star", "count": 23000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 774000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/zhhzSbdm/ToonApp.png",
+    "title": "ToonApp",
+    "companyName": "Lyrebird Studio",
+    "id": 19,
+    "description": "AI cartoon face maker with auto-detect background and portrait styles.",
+    "size": 58,
+    "reviews": 500000,
+    "ratingAvg": 4.5,
+    "downloads": 20000000,
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 70000 },
+      { "name": "5 star", "count": 398000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HT20M11L/Polish.jpg",
+    "title": "Polish",
+    "companyName": "InShot Inc.",
+    "id": 20,
+    "description": "Photo editor with AI background blur, filters, and creative tools.",
+    "size": 41,
+    "reviews": 860000,
+    "ratingAvg": 4.6,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 6000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 18000 },
+      { "name": "4 star", "count": 90000 },
+      { "name": "5 star", "count": 736000 }
+    ]
+  }
+]
