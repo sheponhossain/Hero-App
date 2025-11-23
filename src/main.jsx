@@ -35,10 +35,10 @@ const router = createBrowserRouter([
         path: '*',
         element: <Error404></Error404>,
       },
-      {
-        path: 'error-app',
-        element: <ErrorApp></ErrorApp>,
-      },
+      // {
+      //   path: 'error-app',
+      //   element: <ErrorApp></ErrorApp>,
+      // },
       {
         path: 'card-details',
         element: <CardDetails></CardDetails>,

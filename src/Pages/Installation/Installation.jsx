@@ -1,29 +1,43 @@
-import React, { useEffect } from 'react';
 import downloadIcon from '../../assets/icon-downloads.png';
 import ratingsIcon from '../../assets/icon-ratings.png';
 import { useLocation } from 'react-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Installation = () => {
   const [cards, setCards] = useState([]);
 
-  const handleDelete = (id) => {
-    setCards(cards.filter((card) => card.id !== id));
+  const parseSize = (size = '') => {
+    const value = parseFloat(size);
+
+    if (size.toLowerCase().includes('gb')) {
+      return value * 1024; // Convert GB → MB
+    }
+    return value; // MB
   };
+
+  // -------- SORT BY SIZE FUNCTION -----------
+  const handleSortBySize = () => {
+    const sorted = [...cards].sort(
+      (a, b) => parseSize(a.size) - parseSize(b.size)
+    );
+
+    setCards(sorted);
+    localStorage.setItem('installedApps', JSON.stringify(sorted));
+  };
+  const handleDelete = (id) => {
+    const updated = cards.filter((card) => card.id !== id);
+    setCards(updated);
+
+    localStorage.setItem('installedApps', JSON.stringify(updated));
+  };
+
   const location = useLocation();
   console.log(location);
-  //   { title, ratingAvg, image, downloads }
   useEffect(() => {
-    if (!location.state) return;
+    const saved = JSON.parse(localStorage.getItem('installedApps')) || [];
+    setCards(saved);
+  }, []);
 
-    if (Array.isArray(location.state)) {
-      setCards(location.state);
-    } else {
-      setCards([location.state]);
-    }
-  }, [location.state]);
-
-  console.log(cards);
   return (
     <div>
       <div className="text-center pt-10">
@@ -38,18 +52,15 @@ const Installation = () => {
           <h2 className="text-2xl text-center pt-20">1 Apps Found</h2>
         </div>
         <div className="dropdown pt-20 flex justify-between items-center">
-          <div tabIndex={0} role="button" className="btn m-1">
+          <button
+            onClick={handleSortBySize}
+            tabIndex={0}
+            role="button"
+            className="btn m-1"
+          >
             Sort By Size
             {/* <img src={dropdownimg} className="w-5 h-5"></img> */}
-          </div>
-          {/* <ul
-            tabIndex="-1"
-            className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
-          >
-            <li>
-              <a>Sort By Size</a>
-            </li>
-          </ul> */}
+          </button>
         </div>
       </div>
 
@@ -86,6 +97,7 @@ const Installation = () => {
                   <img src={ratingsIcon} className="h-3 w-3 inline-block"></img>
                   {card.ratingAvg}
                 </div>
+                <p className="text-gray-500 ml-4"> {card.size} </p>
               </div>
             </div>
             <button

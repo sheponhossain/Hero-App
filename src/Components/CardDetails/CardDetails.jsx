@@ -2,23 +2,34 @@ import React from 'react';
 import downloadIcon from '../../assets/icon-downloads.png';
 import ratingIcon from '../../assets/icon-ratings.png';
 import likeIcon from '../../assets/icon-review.png';
-import demoimg from '../../assets/demo-app (5).webp';
 import BarCharts from '../BarChart/BarChart';
+import { Link, useLocation } from 'react-router';
 
 const CardDetails = () => {
+  const cardLocation = useLocation();
+  const {
+    image,
+    companyName,
+    description,
+    downloads,
+    ratingAvg,
+    reviews,
+    size,
+    title,
+  } = cardLocation.state;
   return (
     <div className="w-11/12 mx-auto">
       <div className="flex gap-6 pt-8">
         <div>
-          <img src={demoimg} className="w-70 h-70" alt="Card Detail" />
+          <img src={image} className="w-70 h-70" alt="Card Detail" />
         </div>
         <div>
           <div>
-            <h2 className="text-4xl">SmPlan:ToDo List with Reminder</h2>
+            <h2 className="text-4xl">{title}</h2>
             <p className=" mt-2">
               <span className="text-gray-500">Developed by </span>
               <span className="text-md bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">
-                productive.io
+                {companyName}
               </span>
             </p>
           </div>
@@ -27,28 +38,59 @@ const CardDetails = () => {
             <div>
               <img src={downloadIcon} className="" alt="download Icon"></img>
               <h1 className="mt-2">Downloads</h1>
-              <h2 className="text-4xl font-semibold mt-2">1.2M</h2>
+              {/* <h2 className="text-4xl font-semibold mt-2">{downloads}</h2> */}
+              <div className="text-4xl font-semibold mt-2">
+                {downloads >= 1000000000
+                  ? (downloads / 1000000000).toFixed(1) + 'B'
+                  : downloads >= 1000000
+                    ? (downloads / 1000000).toFixed(1) + 'M'
+                    : downloads >= 1000
+                      ? (downloads / 1000).toFixed(1) + 'K'
+                      : downloads}
+              </div>
             </div>
             <div>
               <img src={ratingIcon} alt="rating icon"></img>
               <h1 className="mt-2">Average Ratings</h1>
-              <h2 className="text-4xl font-semibold mt-2">1.2M</h2>
+              <h2 className="text-4xl font-semibold mt-2">{ratingAvg}</h2>
             </div>
             <div>
               <img src={likeIcon} alt="like icon"></img>
               <h1 className="mt-2">Total Reviews</h1>
-              <h2 className="text-4xl font-semibold mt-2">1.2M</h2>
+              {/* <h2 className="text-4xl font-semibold mt-2">{reviews}</h2> */}
+              <div className="text-4xl font-semibold mt-2">
+                {reviews >= 1000000000
+                  ? (reviews / 1000000000).toFixed(1) + 'B'
+                  : reviews >= 1000000
+                    ? (reviews / 1000000).toFixed(1) + 'M'
+                    : reviews >= 1000
+                      ? (reviews / 1000).toFixed(1) + 'K'
+                      : reviews}
+              </div>
             </div>
           </div>
-          <button className="btn mt-5 bg-[#00D390] border-none text-white ">
-            Install Now (291 MB)
-          </button>
+          <Link
+            state={cardLocation.state}
+            to={'/installation'}
+            className="btn mt-5 bg-[#00D390] border-none text-white "
+          >
+            Install Now ({size})
+          </Link>
         </div>
       </div>
       <hr className="my-10 border-gray-500" />
+
+      {/* Ratings Chart section */}
       <div>
         <h1 className="text-3xl font-semibold mb-4">Ratings</h1>
-        <BarCharts></BarCharts>
+        <BarCharts cardLocation={cardLocation}></BarCharts>
+      </div>
+      <hr className=" border-gray-500" />
+
+      {/* description section  */}
+      <div>
+        <h1 className="text-2xl mt-10">Description</h1>
+        <p className="mt-10 pb-10 text-gray-500"> {description} </p>
       </div>
     </div>
   );

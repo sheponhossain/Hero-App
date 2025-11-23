@@ -7,8 +7,6 @@ const Cards = ({ cardData }) => {
   if (!cardData || !cardData.data) {
     return <div className="text-center py-10 text-gray-400">Loading...</div>;
   }
-
-  console.log(cardData);
   return (
     <div className="grid grid-cols-4 gap-6">
       {cardData.data.map((app) => {
@@ -18,11 +16,28 @@ const Cards = ({ cardData }) => {
             className="card bg-base-100 shadow-sm hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300"
           >
             <figure>
-              <img
-                src={app.image}
-                alt={app.title}
-                className="min-h-60 max-w-58 mt-2"
-              />
+              <Link
+                onClick={() => {
+                  const installed =
+                    JSON.parse(localStorage.getItem('installedApps')) || [];
+
+                  if (!installed.some((item) => item.id === app.id)) {
+                    installed.push(app);
+                    localStorage.setItem(
+                      'installedApps',
+                      JSON.stringify(installed)
+                    );
+                  }
+                }}
+                state={app}
+                to={'/card-details'}
+              >
+                <img
+                  src={app.image}
+                  alt={app.title}
+                  className="min-h-60 max-w-58 mt-2 bg-white"
+                />
+              </Link>
             </figure>
             <div className="card-body">
               <h2 className="card-title">{app.title}</h2>
@@ -35,7 +50,21 @@ const Cards = ({ cardData }) => {
                     src={downloadIcon}
                     className="h-3 w-3 inline-block"
                   ></img>
-                  <Link to={`/installation`}>
+                  <Link
+                    onClick={() => {
+                      const installed =
+                        JSON.parse(localStorage.getItem('installedApps')) || [];
+
+                      if (!installed.some((item) => item.id === app.id)) {
+                        installed.push(app);
+                        localStorage.setItem(
+                          'installedApps',
+                          JSON.stringify(installed)
+                        );
+                      }
+                    }}
+                    to={`/installation`}
+                  >
                     <div className="text-[#00D390] font-bold">
                       {app.downloads >= 1000000000
                         ? (app.downloads / 1000000000).toFixed(1) + 'B'

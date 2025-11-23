@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AppCard from '../../Components/AppCard/AppCard';
-import { useLoaderData } from 'react-router';
+import { Link, useLoaderData } from 'react-router';
+import ErrorApp from '../../Components/Error-App/ErrorApp';
 
 const Apps = () => {
   const appData = useLoaderData();
   const cardData = appData.data;
+  const [search, setSearch] = useState('');
+
+  // Filter logic
+  const filteredData = cardData.filter((app) =>
+    app.title.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="">
@@ -34,14 +41,25 @@ const Apps = () => {
                 <path d="m21 21-4.3-4.3"></path>
               </g>
             </svg>
-            <input type="search" required placeholder="Search" />
+            <input
+              type="search"
+              onChange={(e) => setSearch(e.target.value)}
+              required
+              placeholder="Search"
+            />
           </label>
         </div>
       </div>
       {/* card section */}
       <div className="w-11/12 mx-auto mt-10 mb-20">
         {/* Cards Component */}
-        <AppCard cardData={cardData}></AppCard>
+
+        {/* <AppCard cardData={filteredData}></AppCard> */}
+        {filteredData.length === 0 ? (
+          <ErrorApp></ErrorApp>
+        ) : (
+          <AppCard cardData={filteredData} />
+        )}
       </div>
     </div>
   );

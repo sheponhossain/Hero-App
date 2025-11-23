@@ -16,7 +16,7 @@ const ErrorApp = () => {
       </p>
       <div className="flex justify-center pt-10 pb-10">
         <button
-          onClick={() => navigate(-1)}
+          onClick={() => navigate('/apps')}
           className="btn bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-5 text-white rounded-lg font-semibold border-none"
         >
           Go Back!
