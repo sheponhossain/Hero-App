@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div className="text-center ">
-      <h1 className="text-7xl text-center text-[#001931] font-semibold pt-20">
+      <h1 className="md:text-7xl text-4xl text-center text-[#001931] font-semibold pt-20">
         We Build
         <br />
         <span className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">
@@ -40,28 +40,34 @@ const Home = () => {
         <img
           src={herologo}
           alt="Herologo"
-          className="h-[390px] w-6/12 flex items-center justify-center "
+          className="h-[390px] w-5/6 sm:w-6/12 flex items-center justify-center "
         ></img>
       </div>
 
       <div className="w-full h-[350px] bg-linear-to-r from-[#632EE3] to-[#9F62F2] ">
-        <h1 className="text-3xl text-white font-semibold pt-12">
+        <h1 className="sm:text-3xl text-white font-semibold pt-12">
           Trusted by Millions, Built for You
         </h1>
-        <div className="flex gap-16 justify-center mt-10">
+        <div className="flex gap-10 md:gap-16 justify-center pl-2 pr-2 mt-10">
           <div>
             <p className="text-gray-300 mt-4">Total Downloads </p>
-            <h1 className="text-4xl text-white font-bold mt-2">29.6M</h1>
+            <h1 className="sm:text-4xl text-2xl text-white font-bold mt-2">
+              29.6M
+            </h1>
             <p className="text-gray-300 mt-4">21% more than last month </p>
           </div>
           <div>
             <p className="text-gray-300 mt-4">Total Reviews</p>
-            <h1 className="text-4xl text-white font-bold mt-2">906K</h1>
+            <h1 className="sm:text-4xl text-2xl text-white font-bold mt-2">
+              906K
+            </h1>
             <p className="text-gray-300 mt-4">46% more than last month</p>
           </div>
           <div>
             <p className="text-gray-300 mt-4">Active Apps</p>
-            <h1 className="text-4xl text-white font-bold mt-2">132+</h1>
+            <h1 className="sm:text-4xl text-2xl text-white font-bold mt-2">
+              132+
+            </h1>
             <p className="text-gray-300 mt-4">31 more will Launch</p>
           </div>
         </div>

@@ -8,7 +8,7 @@ const Cards = ({ cardData }) => {
     return <div className="text-center py-10 text-gray-400">Loading...</div>;
   }
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-6">
       {cardData.data.map((app) => {
         return (
           <div
