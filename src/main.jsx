@@ -7,6 +7,10 @@ import Root from './Pages/Root/Root';
 import Home from './Pages/Home/Home';
 import Apps from './Pages/Apps/Apps';
 import Installation from './Pages/Installation/Installation';
+import axios, { Axios } from 'axios';
+import Error404 from './Components/Error-404/Error404';
+import ErrorApp from './Components/Error-App/ErrorApp';
+import CardDetails from './Components/CardDetails/CardDetails';
 
 const router = createBrowserRouter([
   {
@@ -15,17 +19,29 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch('/homeApp.json'),
+        loader: () => axios('/AllAppsCard.json'),
         element: <Home></Home>,
       },
       {
         path: 'apps',
-        loader: () => fetch('/AllAppsCard.json'),
+        loader: () => axios(`/AllAppsCard.json`),
         element: <Apps></Apps>,
       },
       {
         path: 'installation',
         element: <Installation></Installation>,
+      },
+      {
+        path: '*',
+        element: <Error404></Error404>,
+      },
+      {
+        path: 'error-app',
+        element: <ErrorApp></ErrorApp>,
+      },
+      {
+        path: 'card-details',
+        element: <CardDetails></CardDetails>,
       },
     ],
   },

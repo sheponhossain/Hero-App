@@ -6,8 +6,8 @@ import Cards from '../../Components/Cards/Cards';
 import { useLoaderData } from 'react-router';
 
 const Home = () => {
-  const data = useLoaderData();
-  console.log(data);
+  const cardData = useLoaderData();
+
   return (
     <div className="text-center ">
       <h1 className="text-7xl text-center text-[#001931] font-semibold pt-20">
@@ -77,10 +77,10 @@ const Home = () => {
         </p>
         <div className="w-11/12 mx-auto">
           {/* Cards Component */}
-          <Cards data={data}></Cards>
+          <Cards cardData={cardData}></Cards>
         </div>
         <div>
-          <Link to={'/apps'} className="btn btn-primary mt-6 mb-10">
+          <Link to="/apps" className="btn btn-primary mt-6 mb-10">
             See All Apps
           </Link>
         </div>

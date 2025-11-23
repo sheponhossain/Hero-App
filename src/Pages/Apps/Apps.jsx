@@ -4,7 +4,8 @@ import { useLoaderData } from 'react-router';
 
 const Apps = () => {
   const appData = useLoaderData();
-  //   console.log(appData);
+  const cardData = appData.data;
+
   return (
     <div className="">
       <div className="w-11/12 mx-auto">
@@ -40,7 +41,7 @@ const Apps = () => {
       {/* card section */}
       <div className="w-11/12 mx-auto mt-10 mb-20">
         {/* Cards Component */}
-        <AppCard appData={appData}></AppCard>
+        <AppCard cardData={cardData}></AppCard>
       </div>
     </div>
   );

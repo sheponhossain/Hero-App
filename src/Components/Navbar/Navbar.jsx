@@ -1,7 +1,8 @@
 import React from 'react';
 import gitlogo from '../../assets/GitLogo.png';
 import Logo from '../../assets/logo.png';
-import { Link, NavLink } from 'react-router';
+import { NavLink } from 'react-router';
+import { Link } from 'react-router';
 
 const Navbar = () => {
   return (
@@ -29,21 +30,17 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <NavLink to={'/'}>
-              <li>
-                <a>Home</a>
-              </li>
-            </NavLink>
-            <NavLink to={'/apps'}>
-              <li>
-                <a>Apps</a>
-              </li>
-            </NavLink>
-            <NavLink to={'/installation'}>
-              <li>
-                <a>Installation</a>
-              </li>
-            </NavLink>
+            <li>
+              <NavLink to={'/'}>Home</NavLink>
+            </li>
+
+            <li>
+              <NavLink to={`apps`}>Apps</NavLink>
+            </li>
+
+            <li>
+              <NavLink to={`installation`}>Installation</NavLink>
+            </li>
           </ul>
         </div>
         <div className="flex items-center">
@@ -52,30 +49,28 @@ const Navbar = () => {
             alt="Hero.io Logo"
             className="w-10 h-10 inline-block mr-2"
           />
-          <Link to={'/'}>
-            <a className=" text-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold">
-              HERO.IO
-            </a>
+
+          <Link
+            to={'/'}
+            className=" text-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent font-bold"
+          >
+            HERO.IO
           </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-medium text-md">
-          <NavLink to={'/'}>
-            <li>
-              <a>Home</a>
-            </li>
-          </NavLink>
-          <NavLink to={'/apps'}>
-            <li>
-              <a>Apps</a>
-            </li>
-          </NavLink>
-          <NavLink to={'/installation'}>
-            <li>
-              <a>Installation</a>
-            </li>
-          </NavLink>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/apps">Apps</NavLink>
+          </li>
+
+          <li>
+            <NavLink to="/installation">Installation</NavLink>
+          </li>
         </ul>
       </div>
       <div className="navbar-end">

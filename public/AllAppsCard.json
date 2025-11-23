@@ -358,5 +358,96 @@
       { "name": "4 star", "count": 90000 },
       { "name": "5 star", "count": 736000 }
     ]
+  },
+   {
+    "image": "https://i.ibb.co.com/V09JN7C4/chatgpt.webp",
+    "title": "ChatGPT",
+    "companyName": "OpenAI",
+    "id": 21,
+    "description": "Advanced conversational AI assistant for writing, learning, coding, and productivity.",
+    "size": 52,
+    "reviews": 1893212,
+    "ratingAvg": 4.8,
+    "downloads": 500000000,
+    "ratings": [
+      { "name": "1 star", "count": 21000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 91000 },
+      { "name": "4 star", "count": 302000 },
+      { "name": "5 star", "count": 1443212 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Wvjwt82k/notion.png",
+    "title": "Notion AI",
+    "companyName": "Notion",
+    "id": 22,
+    "description": "Smart AI workspace for notes, documents, writing, and task management.",
+    "size": 45,
+    "reviews": 532001,
+    "ratingAvg": 4.7,
+    "downloads": 50000000,
+    "ratings": [
+      { "name": "1 star", "count": 8000 },
+      { "name": "2 star", "count": 11000 },
+      { "name": "3 star", "count": 21000 },
+      { "name": "4 star", "count": 98000 },
+      { "name": "5 star", "count": 393001 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/7H6ySRL/Adobe-Firefly-Mobile.png",
+    "title": "Adobe Firefly Mobile",
+    "companyName": "Adobe",
+    "id": 23,
+    "description": "AI image generator and editor that supports text-to-image, recolor, and enhancements.",
+    "size": 88,
+    "reviews": 430120,
+    "ratingAvg": 4.6,
+    "downloads": 18000000,
+    "ratings": [
+      { "name": "1 star", "count": 7000 },
+      { "name": "2 star", "count": 9000 },
+      { "name": "3 star", "count": 21000 },
+      { "name": "4 star", "count": 98000 },
+      { "name": "5 star", "count": 295120 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/r2PZ24kH/Deep-LTranslate.png",
+    "title": "DeepL Translate",
+    "companyName": "DeepL SE",
+    "id": 24,
+    "description": "Highly accurate AI translator with natural language understanding.",
+    "size": 34,
+    "reviews": 302100,
+    "ratingAvg": 4.7,
+    "downloads": 60000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 19000 },
+      { "name": "4 star", "count": 65000 },
+      { "name": "5 star", "count": 205100 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5WtQ5JVC/Replika-AI.jpg",
+    "title": "Replika AI",
+    "companyName": "Luka Inc.",
+    "id": 25,
+    "description": "AI companion chatbot for emotional support, conversation, and self-improvement.",
+    "size": 64,
+    "reviews": 671340,
+    "ratingAvg": 4.5,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 14000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 42000 },
+      { "name": "4 star", "count": 133000 },
+      { "name": "5 star", "count": 462340 }
+    ]
   }
+
 ]
