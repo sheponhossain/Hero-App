@@ -1,15 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AppCard from '../../Components/AppCard/AppCard';
 import { Link, useLoaderData } from 'react-router';
 import ErrorApp from '../../Components/Error-App/ErrorApp';
+import { SyncLoader } from 'react-spinners';
 
 const Apps = () => {
   const appData = useLoaderData();
   const cardData = appData.data;
   const [search, setSearch] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [filteredData, setFilteredData] = useState(cardData);
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setLoading(true);
 
-  // Filter logic
-  const filteredData = cardData.filter((app) =>
+    const delay = setTimeout(() => {
+      const results = cardData.filter((app) =>
+        app.title.toLowerCase().includes(search.toLowerCase())
+      );
+      setFilteredData(results);
+      setLoading(false);
+    }, 200);
+
+    return () => clearTimeout(delay);
+  }, [search, cardData]);
+
+  const filteringdData = cardData.filter((app) =>
     app.title.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -55,10 +71,14 @@ const Apps = () => {
         {/* Cards Component */}
 
         {/* <AppCard cardData={filteredData}></AppCard> */}
-        {filteredData.length === 0 ? (
+        {loading ? (
+          <div className="flex justify-center items-center">
+            <SyncLoader></SyncLoader>{' '}
+          </div>
+        ) : filteredData.length === 0 ? (
           <ErrorApp></ErrorApp>
         ) : (
-          <AppCard cardData={filteredData} />
+          <AppCard cardData={filteringdData} />
         )}
       </div>
     </div>

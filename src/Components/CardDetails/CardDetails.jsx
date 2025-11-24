@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import downloadIcon from '../../assets/icon-downloads.png';
 import ratingIcon from '../../assets/icon-ratings.png';
 import likeIcon from '../../assets/icon-review.png';
 import BarCharts from '../BarChart/BarChart';
 import { Link, useLocation } from 'react-router';
+import { toast, ToastContainer } from 'react-toastify';
 
 const CardDetails = () => {
+  const notify = () => toast.success('Successfully Installed');
+  const [installed, setInstalled] = useState(false);
   const cardLocation = useLocation();
+
+  const handleInstall = () => {
+    notify();
+    setInstalled(true);
+  };
+
   const {
     image,
     companyName,
@@ -70,11 +79,15 @@ const CardDetails = () => {
             </div>
           </div>
           <Link
+            onClick={handleInstall}
             state={cardLocation.state}
-            to={'/installation'}
-            className="btn mt-5 bg-[#00D390] border-none text-white "
+            // to={'/installation'}
+            disabled={installed}
+            className={`btn mt-5 border-none text-white 
+             ${installed ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'}`}
           >
-            Install Now ({size})
+            {installed ? 'Installed ✔' : `Install Now (${size})`}
+            <ToastContainer></ToastContainer>
           </Link>
         </div>
       </div>

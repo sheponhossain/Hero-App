@@ -74,7 +74,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <Link to={'/'}>
+        <Link to={'https://github.com/sheponhossain'}>
           <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] p-4 text-white rounded-lg font-semibold flex items-center gap-2">
             <img src={gitlogo} alt="GitHub Logo" className="w-5 h-5" />
             <li>Contribute</li>
