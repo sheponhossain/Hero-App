@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer footer-horizontal footer-center bg-[#001931] text-white rounded p-10">
       <div className="flex justify-between w-full">
         <Link to={'/'} className="btn btn-ghost normal-case text-xl">
-          MyApp
+          APPNEST
         </Link>
         <nav>
           <h1 className="text-xl">Social Links</h1>

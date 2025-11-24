@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const AppCard = ({ cardData }) => {
   return (
-    <div className="grid grid-cols-4 gap-6 pb-10">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-10">
       {cardData.map((data) => (
         <div
           key={data.id}

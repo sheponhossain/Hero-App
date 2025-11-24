@@ -61,14 +61,14 @@ const Installation = () => {
         </p>
       </div>
 
-      <div className="flex justify-between items-center w-11/12 mx-auto text-center">
+      <div className="flex justify-between items-center pt-4 w-11/12 mx-auto text-center">
         <div>
-          <h2 className="text-2xl text-center pt-20">
+          <h2 className="text-2xl text-center sm:pt-20 ">
             {cards.length} Apps Found
           </h2>
         </div>
-        <div className="dropdown dropdown-start">
-          <div tabIndex={0} role="button" className="btn m-1">
+        <div className="dropdown dropdown-start sm:pt-16">
+          <div tabIndex={0} role="button" className="btn m-1 ">
             Sort By Size
             <img src={dropdownimg} className="w-5 h-5"></img>
           </div>
@@ -88,7 +88,7 @@ const Installation = () => {
 
       {/*********************************************************************************************************************************/}
 
-      <div className="w-11/12 mx-auto mt-10 mb-20 grid grid-cols-1 gap-6 pb-15">
+      <div className="w-11/12 mx-auto mt-10 mb-20 grid grid-cols-1 gap-6 pb-15 pt-8">
         {/* <InstallCard cardData={cardData}></InstallCard> */}
         {loading ? (
           <div className="flex justify-center items-center">

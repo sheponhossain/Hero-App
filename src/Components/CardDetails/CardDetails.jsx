@@ -28,7 +28,7 @@ const CardDetails = () => {
   } = cardLocation.state;
   return (
     <div className="w-11/12 mx-auto">
-      <div className="flex gap-6 pt-8">
+      <div className="flex sm:gap-6 gap-2 pt-8">
         <div>
           <img src={image} className="w-70 h-70" alt="Card Detail" />
         </div>
@@ -43,12 +43,12 @@ const CardDetails = () => {
             </p>
           </div>
           <hr className="my-2 min-w-full border-gray-500" />
-          <div className="flex gap-10 items-center mt-4">
+          <div className="flex sm:gap-10 gap-2 items-center mt-4">
             <div>
               <img src={downloadIcon} className="" alt="download Icon"></img>
               <h1 className="mt-2">Downloads</h1>
               {/* <h2 className="text-4xl font-semibold mt-2">{downloads}</h2> */}
-              <div className="text-4xl font-semibold mt-2">
+              <div className="sm:text-4xl font-semibold mt-2">
                 {downloads >= 1000000000
                   ? (downloads / 1000000000).toFixed(1) + 'B'
                   : downloads >= 1000000
@@ -61,13 +61,13 @@ const CardDetails = () => {
             <div>
               <img src={ratingIcon} alt="rating icon"></img>
               <h1 className="mt-2">Average Ratings</h1>
-              <h2 className="text-4xl font-semibold mt-2">{ratingAvg}</h2>
+              <h2 className="sm:text-4xl font-semibold mt-2">{ratingAvg}</h2>
             </div>
             <div>
               <img src={likeIcon} alt="like icon"></img>
               <h1 className="mt-2">Total Reviews</h1>
               {/* <h2 className="text-4xl font-semibold mt-2">{reviews}</h2> */}
-              <div className="text-4xl font-semibold mt-2">
+              <div className="sm:text-4xl font-semibold mt-2">
                 {reviews >= 1000000000
                   ? (reviews / 1000000000).toFixed(1) + 'B'
                   : reviews >= 1000000
